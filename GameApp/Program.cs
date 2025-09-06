@@ -6,10 +6,16 @@ namespace GameApp
     {
         public static void Main(string[] args)
         {
-            Shield shield = new Shield("Iron Shield", 100);
+            Shield shield = new Shield("Iron Shield", 200);
 
             shield.ShowInfo();
             shield.UseItem();
+
+            Potion potion = new Potion("Health Pot", 60);       
+
+            potion.ShowInfo();
+            potion.UseItem();
+            
         }
 
     }
